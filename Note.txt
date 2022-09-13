@@ -1,0 +1,84 @@
+1. hover vào subMenu bị cursor: pointer  --> OK
+
+2. Slider còn phần chuyển slide
+
+3. Tìm cách tối ưu fetch API đang bị lâu quá  --> Tạm ổn
+
+    check phim:
+        const nonAdultsMovieList = (movieDetails) => {
+        let result = [];
+
+        for (let i = 0; i < movieDetails.length; i++) {
+            let flag = true;
+
+            for (let j = 0; j < movieDetails[i].movie.category.length; j++) {
+                if (movieDetails[i].movie.category[j].name.includes('18+')) {
+                    flag = false;
+                    break;
+                }
+            }
+
+            if (flag) {
+                result = [...result, movieDetails[i]];
+            }
+        }
+
+        return result;
+    };
+
+4. Gán link m3u8 sử dụng thư viện react-hls-player
+    <ReactHlsPlayer
+        src={https://1080.hdphimonline.com/20220728/35288_9f7911c1/index.m3u8}
+        autoPlay={false}
+        controls={true}
+        width="60%"
+        height="auto"
+    />
+
+<video width="352" height="198" controls>
+    <source src="playlist.m3u8" type="application/x-mpegURL">
+</video>
+
+5. Các case chưa xử lý
+
+6. Test loading
+    console.log('nameMovie: ' + !nameMovie);
+    console.log('src: ' + !src);
+    console.log('des_content: ' + !des_content);
+    console.log('des_more_content: ' + !des_more_content);
+    console.log('episode_total: ' + !episode_total);
+    console.log('status: ' + !status);
+    console.log('duration: ' + !duration);
+    console.log('type: ' + !type);
+    console.log('Loading: ' + loading);
+
+7. Tìm cách set height trong sliderItem tỷ lệ với width
+
+8. Tìm cách get element loading đúng nó
+
+97. Lỗi click vào play, full screen
+
+98. Full screen
+    const handleClickFullscreen = () => {
+        if (screenfull.isEnabled) {
+            if (!screenfull.isFullscreen) {
+                // const videoContent = document.querySelector(`.${cx('content')}`);
+                // screenfull.request(videoContent);
+                screenfull.request(findDOMNode(videoRef.current));
+            } else {
+                screenfull.exit();
+            }
+        }
+    };
+
+98. Component List dòng 67
+
+99. K có set State trong component Image -> Khong biet co re-render anh loi k
+
+100. Đang comment StrictMode
+
+101. Lazy Loading Image
+    Cách 1: https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+    Cách 2: https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+
+

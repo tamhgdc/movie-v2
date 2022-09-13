@@ -1,0 +1,24 @@
+Search:
+	
+	
+Theo thể loại:
+	https://ophim.tv/_next/data/m5wySfMXDukfAvbiXTiQO/the-loai/hai-huoc.json?slug=hai-huoc
+
+Theo quốc gia:
+	https://ophim.tv/_next/data/m5wySfMXDukfAvbiXTiQO/quoc-gia/han-quoc.json?slug=han-quoc
+
+Theo page:
+	https://ophim.tv/_next/data/m5wySfMXDukfAvbiXTiQO/danh-sach/phim-moi.json?page=2&slug=phim-moi
+
+
+	https://ophim1.com/danh-sach/phim-moi-cap-nhat?page=${page}
+	VD: https://ophim1.com/danh-sach/phim-moi-cap-nhat?page=1
+
+Theo thông tin phim:
+	https://ophim.tv/_next/data/m5wySfMXDukfAvbiXTiQO/phim/kara-sevda-phan-1.json?slug=kara-sevda-phan-1
+
+	https://ophim1.com/phim/${slug}
+	VD: https://ophim1.com/phim/luong-bat-nghi
+		https://ophim1.com/phim/thanh-tra-mau-muc-phan-2
+
+

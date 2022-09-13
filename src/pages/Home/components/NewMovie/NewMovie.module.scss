@@ -1,0 +1,20 @@
+.heading__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 160px 0 40px 0;
+}
+
+.heading {
+    font-size: 4.8rem;
+    font-weight: 500;
+    line-height: 64px;
+    color: var(--white-color);
+}
+
+.view__more {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--primary-color);
+}

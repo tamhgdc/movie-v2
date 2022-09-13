@@ -1,0 +1,21 @@
+.wrapper {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    padding: 16px;
+    max-height: min((100vh - 96px) - 60px, 500px);
+    overflow-y: overlay;
+    background-color: var(--black-color);
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.3);
+
+    &:hover {
+        cursor: auto;
+    }
+}
+
+.show__popper {
+    display: block;
+}

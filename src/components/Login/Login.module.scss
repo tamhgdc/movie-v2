@@ -1,0 +1,42 @@
+.wrapper {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+    position: fixed;
+    z-index: 210;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 800px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+}
+
+.loginWith-btn {
+    padding: 16px;
+
+    border-radius: 10px;
+
+    width: 250px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: var(--background-active-color);
+    color: var(--white-color);
+    opacity: 1;
+
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}

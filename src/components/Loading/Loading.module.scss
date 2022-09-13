@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: #eee;
+    margin: auto;
+
+    &.preview {
+        padding: 2.5px;
+    }
+}
+
+.placeholder {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #ccc;
+
+    .content {
+        --width-shadow: 100px;
+
+        position: absolute;
+        top: 0;
+        left: calc(-1 * var(--width-shadow));
+        height: 100%;
+        width: var(--width-shadow);
+
+        background: linear-gradient(to right, transparent, #ffffff70, transparent);
+        animation: reflect 800ms ease-out infinite;
+    }
+}
+
+@keyframes reflect {
+    to {
+        left: calc(100% + var(--width-shadow));
+    }
+}
